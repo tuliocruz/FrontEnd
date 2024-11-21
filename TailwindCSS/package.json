@@ -1,0 +1,15 @@
+{
+    "name": "tailwind-frontend",
+    "version": "1.0.0",
+    "description": "Projeto frontend com TailwindCSS.",
+    "scripts": {
+        "build": "npx tailwindcss -i ./styles.css -o ./public/css/tailwind.css --watch",
+        "serve": "browser-sync start --server --files '**/*.php, public/css/*.css'"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "browser-sync": "^2.27.10",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.15"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "tulio/tailwind-frontend",
+    "description": "Um projeto frontend simples usando PHP puro e TailwindCSS.",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@build"
+        ],
+        "post-update-cmd": [
+            "@build"
+        ],
+        "build": [
+            "npm install && npm run build"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
